@@ -1,14 +1,59 @@
 
+# BASICS :
+## 1. Literals:
+  1. **strings**:
+    1. 'John'
+    2. '1990-01-01'
+    3. '50'
+    
 
-# SQL commands are divided into 5 parts:
-1. DDL (Data Definition Language)
-2. DML (Data Manipulation Language)
-3. DQL (Data Query Language)
-4. TCL (Transaction Control Language)
-5. DCL (Data Control Language) 
+  2. **Numeric Literals: integer, decimal, or scientific notation :**  
+  * **for example:**
+    1. 200
+    2. -5
+    3. 6.0221415E23
+
+## 2. Comments:
+ 1. ` -- `
+ 2. `/* */`
+
+
+## 3. Identifiers
+* objects in the database such as **tables**, **columns**, **indexes**, etc. 
+* SQL is **case-insensitive** with respect to keywords and identifiers. So the following statements are equivalent.
+    1. Select  * From employees;   
+    2. SELECT * FROM EMPLOYEES;   
+    3. select * from employees;   
+    4. SELECT * FROM employees;
 
 --------------------------------------------------------------------------------------------------------------------------------------------
-# QUICK SUMMARY : 
+
+# SQL commands are divided into 5 parts:
+## 1. DDL (Data Definition Language)
+   1. CREATE
+   2. ALTER
+   3. DROP
+   4. TRUNCATE
+
+## 2. DML (Data Manipulation Language)
+   1. INSERT
+   2. UPDATE
+   3. DELETE
+
+3. DQL (Data Query Language)
+   1. SELECT
+
+4. TCL (Transaction Control Language)
+   1. SAVEPOINT
+   2. COMMIT 
+   3. ROLLBACK
+
+5. DCL (Data Control Language)
+   1. GRANT
+   2. REVOKE
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 1. DDL (Data Definition Language):
 * **Data definition** means: Defining the data..
@@ -41,14 +86,21 @@
 *  *Dealing with actual Rows* .
 *  so we manipulate that ( Like : insert new rows, delete rows, update the rows, delete particular field, etc)
 
-   ### Mainly 3 commands ( INSERT, UPDATE, DELETE ):
-       1. INSERT : 
+#### Mainly 3 commands ( INSERT, UPDATE, DELETE ):
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 3. DQL ( Data Query Language ):
 * Retrieving data from Table
-#### Command : SELECT
+### Command : SELECT
+
+#### 1. selecting data from all columns
+     ```sql
+     select * from <tableName>
+     ``` 
+
+#### 2. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -91,29 +143,3 @@
 
   -----------------------------------------------------------------------------------------------------------------------------------
 
-# BASICS :
-## 1. Literals:
-  1. **strings**:
-    1. 'John'
-    2. '1990-01-01'
-    3. '50'
-    
-
-  2. **Numeric Literals: integer, decimal, or scientific notation :**  
-  * **for example:**
-    1. 200
-    2. -5
-    3. 6.0221415E23
-
-## 2. Comments:
- 1. ` -- `
- 2. `/* */`
-
-
-## 3. Identifiers
-* objects in the database such as **tables**, **columns**, **indexes**, etc. 
-* SQL is case-insensitive with respect to keywords and identifiers. So the following statements are equivalent.
-    1. Select  * From employees;   
-    2. SELECT * FROM EMPLOYEES;   
-    3. select * from employees;   
-    4. SELECT * FROM employees;
