@@ -113,7 +113,7 @@
 ## 3. Identifiers
 * objects in the database such as **tables**, **columns**, **indexes**, etc. 
 * SQL is case-insensitive with respect to keywords and identifiers. So the following statements are equivalent.
-    `Select  * From employees;   
-    SELECT * FROM EMPLOYEES;   
-    select * from employees;   
-    SELECT * FROM employees;`   
+    `1. Select  * From employees;   
+    2. SELECT * FROM EMPLOYEES;   
+    3. select * from employees;   
+    4. SELECT * FROM employees;`   
