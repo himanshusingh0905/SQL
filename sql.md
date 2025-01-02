@@ -96,12 +96,22 @@
 ### Command : SELECT
 
 #### 1. selecting data from all columns
-     ```sql
+     `
      select * from <tableName>
-     ``` 
+     `
 
-#### 2. 
-
+#### 2. selecting data from specific columns
+* Specify the column list after the **SELECT** clause.
+* **Example:**
+```sql
+SELECT 
+    employee_id, 
+    first_name, 
+    last_name, 
+    hire_date
+FROM
+    employees;
+```
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 4. TCL ( Transaction Query Language ):
