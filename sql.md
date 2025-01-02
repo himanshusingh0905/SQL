@@ -91,19 +91,29 @@
 
   -----------------------------------------------------------------------------------------------------------------------------------
 
-  # BASICS :
-  ## 1. Literals:
+# BASICS :
+## 1. Literals:
   1. **strings**:
-    `
-    'John'
-    '1990-01-01'
-    '50'
-    `
+    1. 'John'
+    2. '1990-01-01'
+    3. '50'
+    
 
   2. **Numeric Literals: integer, decimal, or scientific notation :**  
   * **for example:**
-  `
-    200
-    -5
-    6.0221415E23
-    `
+    1. 200
+    2. -5
+    3. 6.0221415E23
+
+## 2. Comments:
+ 1. ` -- `
+ 2. `/* */`
+
+
+## 3. Identifiers
+* objects in the database such as **tables**, **columns**, **indexes**, etc. 
+* SQL is case-insensitive with respect to keywords and identifiers. So the following statements are equivalent.
+    `Select  * From employees;   
+    SELECT * FROM EMPLOYEES;   
+    select * from employees;   
+    SELECT * FROM employees;`   
