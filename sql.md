@@ -1,4 +1,23 @@
 
+
+# Get started with SQL:
+
+## Pre-requisites:
+1. DATABASE and DBMS(Database management System)
+   * Database: where data is being stored
+   * **Two types:**
+       1. Relational ( or SQL-DB) : Data is stored in the form of Tables.  Eg. Postgresql, MariyaDB, Sqlite, etc..
+       2. Non-Relational (or No-Sql DB) : Data is not stored in the form of tables. Eg.  **MongoDB** 
+
+   * **DBMS** : It's a software which helps in managing databases.  For example: MySQL, Oracle, Microsoft SQL-Server, etc..
+
+2. SQL (Structured Query Language):
+
+  * **User -->  software(eg. posgresql) -> Database**
+  * Softwares like postgresql, mysql, etc understand the SQL.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
 # BASICS :
 ## 1. Literals:
   1. **strings**:
@@ -40,19 +59,25 @@
    2. UPDATE
    3. DELETE
 
-3. DQL (Data Query Language)
+## 3. DQL (Data Query Language)
    1. SELECT
 
-4. TCL (Transaction Control Language)
+## 4. TCL (Transaction Control Language)
    1. SAVEPOINT
    2. COMMIT 
    3. ROLLBACK
 
-5. DCL (Data Control Language)
+## 5. DCL (Data Control Language)
    1. GRANT
    2. REVOKE
 
 
+### AGGREGATE FUNCTIONS:  COUNT,  SUM,  AVG,  MAX,  MIN,   GROUP BY,  HAVING,  ORDER BY,    [total = 8 ]
+
+### FILTERING DATA :  WHERE, AND, OR,  BETWEEN,  LIKE,  IN,   'IS NULL',  'IS NOT NULL'     [Total = 8]
+
+
+### COMBINING DATA : 'INNER JOIN',  'LEFT JOIN', 'RIGHT JOIN',  FULL JOIN,  SELF JOIN,  UNION    [Total = 6]
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 1. DDL (Data Definition Language):
@@ -96,12 +121,12 @@
 ### Command : SELECT
 
 #### 1. selecting data from all columns
-     `
-     select * from <tableName>
-     `
+```sql
+select * from <tableName>
+```
 
 #### 2. selecting data from specific columns
-* Specify the column list after the **SELECT** clause.
+* Specify the *column-list* after the **SELECT** clause.
 * **Example:**
 ```sql
 SELECT 
@@ -112,44 +137,50 @@ SELECT
 FROM
     employees;
 ```
+
+#### 3. Performing a simple calculation
+* The following example uses the SELECT statement to get the first name, last name, salary, and new salary:
+```sql
+SELECT 
+    first_name, 
+    last_name, 
+    salary, 
+    salary * 1.05
+FROM
+    employees;
+```
+* Here **salary * 1.05** is being calculated while quering the table.
+
+#### 4. Assign an ***expression or a column*** an alias:
+* you use the **AS** keyword followed by the column alias as follows:
+`expression AS column_alias`    
+
+```sql
+SELECT 
+    first_name, 
+    last_name, 
+    salary, 
+    salary * 1.05 As new_salary
+FROM
+    employees;
+```
+* **new_salary** is **Aliase** for **salary * 1.05**.
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 4. TCL ( Transaction Query Language ):
 #### COMMANDS :   SAVEPOINT, COMMIT, ROLLBACK
 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 5. DCL (DATA CONTROL LANGUAGE): 
 #### COMMANDS: GRANT, REVOKE
 
------------------------------------------------------------------------------------
-
-#### AGGREGATE FUNCTIONS:  COUNT,  SUM,  AVG,  MAX,  MIN,   GROUP BY,  HAVING,  ORDER BY,    [total = 8 ]
-
-#### FILTERING DATA :  WHERE, AND, OR,  BETWEEN,  LIKE,  IN,   'IS NULL',  'IS NOT NULL'     [Total = 8]
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#### COMBINING DATA : 'INNER JOIN',  'LEFT JOIN', 'RIGHT JOIN',  FULL JOIN,  SELF JOIN,  UNION    [Total = 6]
 
 
-======================================================================================================================================
 
-
-# Get started with SQL:
-
-## Pre-requisites:
-1. DATABASE and DBMS(Database management System)
-   * Database: where data is being stored
-   * **Two types:**
-       1. Relational ( or SQL-DB) : Data is stored in the form of Tables.  Eg. Postgresql, MariyaDB, Sqlite, etc..
-       2. Non-Relational (or No-Sql DB) : Data is not stored in the form of tables. Eg.  **MongoDB** 
-
-   * **DBMS** : It's a software which helps in managing databases.  For example: MySQL, Oracle, Microsoft SQL-Server, etc..
-
-2. SQL (Structured Query Language):
-
-  * **User -->  software(eg. posgresql) -> Database**
-  * Softwares like postgresql, mysql, etc understand the SQL.
-
-  -----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 
