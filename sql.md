@@ -48,26 +48,26 @@
 
 ## 3. DQL ( Data Query Language ):
 * Retrieving data from Table
-### Command : SELECT
+#### Command : SELECT
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 4. TCL ( Transaction Query Language ):
-### COMMANDS :   SAVEPOINT, COMMIT, ROLLBACK
+#### COMMANDS :   SAVEPOINT, COMMIT, ROLLBACK
 
 ----------------------------------------------------------------------------------
 
 ## 5. DCL (DATA CONTROL LANGUAGE): 
-### COMMANDS: GRANT, REVOKE
+#### COMMANDS: GRANT, REVOKE
 
 -----------------------------------------------------------------------------------
 
-## AGGREGATE FUNCTIONS:  COUNT,  SUM,  AVG,  MAX,  MIN,   GROUP BY,  HAVING,  ORDER BY,    [total = 8 ]
+#### AGGREGATE FUNCTIONS:  COUNT,  SUM,  AVG,  MAX,  MIN,   GROUP BY,  HAVING,  ORDER BY,    [total = 8 ]
 
-## FILTERING DATA :  WHERE, AND, OR,  BETWEEN,  LIKE,  IN,   'IS NULL',  'IS NOT NULL'     [Total = 8]
+#### FILTERING DATA :  WHERE, AND, OR,  BETWEEN,  LIKE,  IN,   'IS NULL',  'IS NOT NULL'     [Total = 8]
 
 
-## COMBINING DATA : 'INNER JOIN',  'LEFT JOIN', 'RIGHT JOIN',  FULL JOIN,  SELF JOIN,  UNION    [Total = 6]
+#### COMBINING DATA : 'INNER JOIN',  'LEFT JOIN', 'RIGHT JOIN',  FULL JOIN,  SELF JOIN,  UNION    [Total = 6]
 
 
 ======================================================================================================================================
@@ -113,7 +113,7 @@
 ## 3. Identifiers
 * objects in the database such as **tables**, **columns**, **indexes**, etc. 
 * SQL is case-insensitive with respect to keywords and identifiers. So the following statements are equivalent.
-    `1. Select  * From employees;   
+    1. Select  * From employees;   
     2. SELECT * FROM EMPLOYEES;   
     3. select * from employees;   
-    4. SELECT * FROM employees;`   
+    4. SELECT * FROM employees;
