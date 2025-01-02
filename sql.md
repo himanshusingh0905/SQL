@@ -145,14 +145,14 @@ SELECT
     first_name, 
     last_name, 
     salary, 
-    salary * 1.05
+    salary * 1.5
 FROM
     employees;
 ```
-* Here **salary * 1.05** is being calculated while quering the table.
+* Here **salary * 1.5** is being calculated while quering the table.
 
 #### 4. Assign an ***expression or a column*** an alias:
-* you use the **AS** keyword followed by the column alias as follows:
+* you use the **AS** keyword followed by the ***column alias*** as follows:   
 `expression AS column_alias`    
 
 ```sql
@@ -160,11 +160,11 @@ SELECT
     first_name, 
     last_name, 
     salary, 
-    salary * 1.05 As new_salary
+    salary * 1.5 As new_salary
 FROM
     employees;
 ```
-* **new_salary** is **Aliase** for **salary * 1.05**.
+* **new_salary** is **Aliase** for **salary * 1.5**.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
