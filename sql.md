@@ -12,7 +12,10 @@
 
 ## 1. DDL (Data Definition Language):
 * **Data definition** means: Defining the data..
-    * **For Example:** A simple 2, what is it? Nothing unless it tells some attributes or meaning, like is it a salary, age, no. of cars, etc. so that meaning is provided by DDL. 
+    * **For Example:** A simple 2, what is it? 
+       * It's Nothing, unless it tells some meaning. Like: is it a salary, age, no. of cars, etc.
+       * Simply put it's meaningless
+    * **Hence that meaning is provided by 'DDL' by defining schema, attirbutes (in which that data fall).**
     * Under it comes, dealing with structure or schema of data ( or simply put, we don't deal with *actual data* or *rows* ).
 
     ### Mainly 4 commands: ( CREATE, ALTER, DROP, TRUNCATE )
