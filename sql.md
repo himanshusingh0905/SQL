@@ -88,22 +88,18 @@
     * **Hence that meaning is provided by 'DDL' by defining schema, attirbutes (in which that data fall).**
     * Under it comes, dealing with structure or schema of data ( or simply put, we don't deal with *actual data* or *rows* ).
 
-    ### Mainly 4 commands: ( CREATE, ALTER, DROP, TRUNCATE )
-        1. CREATE : 
-             * CREATE TABLE
-             * CREATE DATABASE
+### Mainly 4 commands: ( CREATE, ALTER, DROP, TRUNCATE )
 
-        2. ALTER :
-             * ALTER TABLE  ( operations like: 'delete col', 'rename col', 'change the type of col', 'change constraints of the col', 'add new col' )
-             * ALTER DATABASE
-
-        3. DROP :
-             * DROP TABLE
-             * DROP DATABASE
-
-        4. TRUNCATE : ( Deletes whole data in a table in one go...)
-             * TRUNCATE TABLE
-             * *This command does not apply on database*
+#### 1. 'CREATE TABLE':
+```sql
+CREATE TABLE regions (
+    region_id SERIAL PRIMARY KEY,
+    region_name CHARACTER VARYING (25)
+);
+```
+* Here ***SERIAL*** means:
+  * It automatically assigns a unique sequential integer value to the column for every new row.
+  *  By default starting from 1
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -165,6 +161,22 @@ FROM
     employees;
 ```
 * **new_salary** is **Aliase** for **salary * 1.5**.
+
+-------------------------------------------------------------------
+### 1.1  'ORDER BY' :
+* The **'ORDER BY'** is an *optional* clause of the **SELECT** statement.
+* Allows you to sort the rows returned by the **SELECT** clause by one or more *sort expressions* in ascending or descending order.
+* By default order  = ASC
+* **SYNTAX**: 
+```sql
+SELECT 
+    select_list
+FROM
+    table_name
+ORDER BY 
+    sort_expression [ASC | DESC];
+
+```
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
