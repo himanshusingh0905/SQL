@@ -72,12 +72,27 @@
    2. REVOKE
 
 
-### AGGREGATE FUNCTIONS:  COUNT,  SUM,  AVG,  MAX,  MIN,   GROUP BY,  HAVING,  ORDER BY,    [total = 8 ]
+### AGGREGATE FUNCTIONS: 
+1. COUNT
+2. SUM
+3. AVG
+4. MAX
+5. MIN 
+
+6. GROUP BY
+7. HAVING 
+8. ORDER BY
 
 ### FILTERING DATA :  WHERE, AND, OR,  BETWEEN,  LIKE,  IN,   'IS NULL',  'IS NOT NULL'     [Total = 8]
 
 
-### COMBINING DATA : 'INNER JOIN',  'LEFT JOIN', 'RIGHT JOIN',  FULL JOIN,  SELF JOIN,  UNION    [Total = 6]
+### COMBINING DATA : 
+1. 'INNER JOIN'
+2. 'LEFT JOIN'
+3. 'RIGHT JOIN'
+4. FULL JOIN
+5. SELF JOIN
+6. UNION
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 1. DDL (Data Definition Language):
@@ -97,9 +112,10 @@ CREATE TABLE regions (
     region_name CHARACTER VARYING (25)
 );
 ```
-* Here ***SERIAL*** means:
+1. Here ***SERIAL*** means:
   * It automatically assigns a unique sequential integer value to the column for every new row.
   *  By default starting from 1
+2. ***PRIMARY KEY***  is a constraint.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
