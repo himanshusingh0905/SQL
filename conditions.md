@@ -71,7 +71,7 @@ FROM students;
 ```
 
 * **Internal working of above example**:
-  * Everytime a new row(in the *grade* col) is evaluated in **CASE**.
+  * Everytime a new row (in the *grade* col) is evaluated in **CASE**.
   * If it's value = 'A', then 'Excellent' is returned and so on.
   * If value comes from *grade* doesn't match anything, then *'Needs Improvement'* is returned.
 
